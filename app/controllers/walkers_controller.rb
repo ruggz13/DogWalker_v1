@@ -1,5 +1,5 @@
 class WalkersController < ApplicationController
-  before_action :find_walker, only: [:show, :edit, :update, :destroy]
+  before_action find_walker, only: [:show, :edit, :update, :destroy]
 
   def show
   end
