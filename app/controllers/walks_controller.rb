@@ -1,5 +1,8 @@
 class WalksController < ApplicationController
   before_action walk_params, only: [:show, :destroy, :create_review]
+  def index
+    @walks = Walks.all
+  end
 
   def show
   end
