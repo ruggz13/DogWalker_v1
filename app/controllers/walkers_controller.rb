@@ -1,27 +1,37 @@
 class WalkersController < ApplicationController
 
-    def show
+  def show
+    @walker = Walker.find(params[:id])
+  end
 
-    end
+  def new
+    @walker = Walker.new
+  end
 
-    def new
+  def create
+    @walker = wakler.create
+  end
 
-    end
-
-    def create
-
-    end
-
-    def edit
-
-    end
-
-    def update
-
-    end
-
-    def delete
-
-    end
+  def edit
     
+  end
+
+  def update
+
+  end
+
+  def destroy
+
+  end
+
+  private
+
+  def find_walker
+    @walker = Walker.find(params[:id])
+  end
+
+  def walker_params(*args)
+    params.require(:walker).
+  end
+  
 end
