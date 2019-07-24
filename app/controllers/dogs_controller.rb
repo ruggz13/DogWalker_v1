@@ -1,7 +1,7 @@
 class DogsController < ApplicationController
 
     def show
-
+        
     end
 
     def new
@@ -20,8 +20,8 @@ class DogsController < ApplicationController
 
     end
 
-    def delete
+    def destroy
 
     end
-    
+
 end
