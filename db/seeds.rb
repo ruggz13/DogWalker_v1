@@ -8,7 +8,7 @@
 
 10.times do
   owner = Owner.create(name: Faker::Name.name, username: Faker::Internet.username)
-  2.times do
+  rand(1..5).times do
     Dog.create(
         name: Faker::Creature::Dog.name,
         age: Faker::Number.within(1..18), 
