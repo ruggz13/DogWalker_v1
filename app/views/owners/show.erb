@@ -11,4 +11,7 @@
 
 <h3>Walks: </h3>
 <ul>
-    <% @owner.walks
+    <% @owner.get_walks.each do |walk| %>
+        <li> <%= link_to walk, walk_path(walk) %></li>
+    <%end%>
+</ul>

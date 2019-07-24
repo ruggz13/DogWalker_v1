@@ -22,9 +22,8 @@ end
   Walker.create(name: Faker::Name.name, username: Faker::Internet.username)
 end
 
-20.times do
+Dog.all.each do |dog|
   walker = Walker.all.sample
-  dog = Dog.all.sample
   Walk.create(
     walker_id: walker.id,
     dog_id: dog.id,
